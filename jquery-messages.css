@@ -1,0 +1,76 @@
+
+.msgContainer .item:not(.alert){
+	background-color: white;
+}
+
+.msgContainer .item.error{
+	background-color: #FFAFAF;
+}
+
+.msgContainer .item.warning{
+	background-color: #FFD3AF;
+}
+
+.msgContainer .item.success{
+	background-color: #CAFFAF;
+}
+
+.msgContainer .item.info{
+	background-color: rgb(175, 223, 255);
+}
+
+.msgContainer {		
+	width: 100%;
+	height: auto;
+	margin: 0px;	
+	font-size: 14px;
+	/*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);*/
+	position: relative;
+	display: table;
+}
+
+.msgContainer #options {
+	display: table;
+	padding-left: 5px;	
+	vertical-align: middle;
+	height: 100%;
+}
+
+#message #options > * {
+	display: table-cell !important;
+}
+
+.msgContainer .item{	
+	display: table;
+	padding: 10px;
+	color: black;
+	margin: 0px;	
+	box-shadow: 0px 2px 5px #D1D1D1;
+	position: relative;
+}
+
+.msgContainer .item #button {
+	display: table-cell;
+	width: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.msgContainer .item .message{
+	display: table-cell;	
+	width: 100%;		
+	text-align: justify;
+	margin: 0px;
+	padding: 0px;
+}
+
+.msgContainer .item .icon{		
+	display: none;
+	height: 100%;
+	vertical-align: bottom;
+}
+
+
+.msgContainer .item *{		
+	vertical-align: middle;
+}
