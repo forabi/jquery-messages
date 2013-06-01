@@ -12,9 +12,9 @@ Messages = function(){
 		group = properties['group'] || '',
 		text = properties['text'] || '',
 		$container = properties['container'] || $(m.settings.defaultMessageSelector),
-		useBootStrap = properties['useBootStrap'] || true,
-		hideCloseButton = properties['hideCloseButton'] || false;
-		this.hideSiblings = properties['hideSiblings'] || true;
+		useBootStrap = properties['useBootStrap'] || true;
+		hideCloseButton = properties['hideCloseButton'] || false,
+		this.hideSiblings = properties['hideSiblings'] || true,
 		this.removeWhenHidden = properties['removeWhenHidden'] || false;
 		var i = '<div class="item ' + (useBootStrap ? 'alert' : '') + '"><div class="message"></div><span id="options"><span style="display: none; margin: 0px 5px;" id="button" class="btn"></span><span> </span><span style="display: table-cell; margin: 0px 5px;" class="btn" id="close"><i class="icon-remove"></i></span></span></div>';
 		var obj = $(i).data('msgObj', this); //jQuery object
